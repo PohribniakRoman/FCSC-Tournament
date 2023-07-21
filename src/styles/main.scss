@@ -157,10 +157,12 @@ body {
         flex-direction: column;
         justify-content: center;
         &--schedule{
-            scale: 0.75;
+            margin: 0;
+            scale: 0.7;
         }
         &--score-container{
-            scale: 0.75;
+            margin: 0;
+            scale: 0.7;
         }
     }
 }
