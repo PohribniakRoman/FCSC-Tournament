@@ -2,14 +2,13 @@ import { useState } from "react";
 import {BsFillGrid3X2GapFill} from "react-icons/bs";
 
 const StandingsData = [
-  { name: "asd1", scroe: { wins: 1, loses: 8 } },
-  { name: "asd2", scroe: { wins: 2, loses: 7 } },
-  { name: "asd3", scroe: { wins: 3, loses: 6 } },
-  { name: "asd4", scroe: { wins: 4, loses: 5 } },
-  { name: "asd5", scroe: { wins: 10, loses: 4 } },
-  { name: "asd6", scroe: { wins: 3, loses: 3 } },
-  { name: "asd7", scroe: { wins: 2, loses: 2 } },
-  { name: "asd8", scroe: { wins: 12, loses: 1 } },
+  { name: "DNRInside", scroe: { wins: 0, loses: 0 } },
+  { name: "AVGAN", scroe: { wins: 0, loses: 0 } },
+  { name: "Team Bobr", scroe: { wins: 0, loses: 0 } },
+  { name: "НЕТРЕБА PLS", scroe: { wins: 0, loses: 0 } },
+  { name: "Пивний удар", scroe: { wins: 0, loses: 0 } },
+  { name: "322 BEZERKER TEAM", scroe: { wins: 0, loses: 0 } },
+  { name: "An4ous Kaban4ika", scroe: { wins: 0, loses: 0 } },
 ];
 
 const ScheduleData = [
