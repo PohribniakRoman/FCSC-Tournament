@@ -2,48 +2,41 @@ import { useState } from "react";
 import {BsFillGrid3X2GapFill} from "react-icons/bs";
 
 const StandingsData = [
-  { name: "DNRInside", scroe: { wins: 0, loses: 0 } },
-  { name: "AVGAN", scroe: { wins: 0, loses: 0 } },
-  { name: "Team Bobr", scroe: { wins: 0, loses: 0 } },
-  { name: "НЕТРЕБА PLS", scroe: { wins: 0, loses: 0 } },
-  { name: "Пивний удар", scroe: { wins: 0, loses: 0 } },
-  { name: "322 BEZERKER TEAM", scroe: { wins: 0, loses: 0 } },
-  { name: "An4ous Kaban4ika", scroe: { wins: 0, loses: 0 } },
+  { name: "DNRInside", scroe: { wins: 0, loses: 0 } },//0
+  { name: "AVGAN", scroe: { wins: 0, loses: 0 } },//1
+  { name: "Team Bobr", scroe: { wins: 0, loses: 0 } },//2
+  { name: "НЕТРЕБА PLS", scroe: { wins: 0, loses: 0 } },//3
+  { name: "Пивний удар", scroe: { wins: 0, loses: 0 } },//4
+  { name: "322 BEZERKER TEAM", scroe: { wins: 0, loses: 0 } },//5
+  { name: "An4ous Kaban4ika", scroe: { wins: 0, loses: 0 } },//6
 ];
 
 const ScheduleData = [
   {
     date: 29.07,
-    time: "12:00",
-    participants: [StandingsData[1], StandingsData[2]],
-    completed: true,
-    score: [2, 0],
-  },
-  {
-    date: 29.07,
-    time: "12:00",
-    participants: [StandingsData[2], StandingsData[1]],
-    completed: true,
-    score: [0, 2],
-  },
-  {
-    date: 29.07,
-    time: "12:00",
-    participants: [StandingsData[3], StandingsData[2]],
-    completed: true,
-    score: [2, 0],
-  },
-  {
-    date: 29.07,
-    time: "12:00",
-    participants: [StandingsData[4], StandingsData[3]],
+    time: "15:00",
+    participants: [StandingsData[2], StandingsData[6]],
     completed: false,
     score: [0, 0],
   },
   {
     date: 29.07,
-    time: "12:00",
+    time: "15:00",
     participants: [StandingsData[5], StandingsData[4]],
+    completed: false,
+    score: [0, 0],
+  },
+  {
+    date: 29.07,
+    time: "17:00",
+    participants: [StandingsData[0], StandingsData[3]],
+    completed: false,
+    score: [0, 0],
+  },
+  {
+    date: 29.07,
+    time: "17:00",
+    participants: [StandingsData[1], "Winner of 1"],
     completed: false,
     score: [0, 0],
   },
@@ -101,7 +94,7 @@ export const Standings: React.FC = () => {
           return (
             <div key={i} className="standings--schedule-item">
               <div className="standings--schedule-container">
-                <h1>{e.participants[0].name}</h1>
+                <h1>{typeof e.participants[0] === "string"?e.participants[0]:e.participants[0].name}</h1>
               </div>
               <div
                 className={`standings--schedule-time ${
@@ -126,7 +119,7 @@ export const Standings: React.FC = () => {
                 )}
               </div>
               <div className="standings--schedule-container right">
-                <h1>{e.participants[1].name}</h1>
+                <h1>{typeof e.participants[1] === "string"?e.participants[1]:e.participants[1].name}</h1>
               </div>
             </div>
           );

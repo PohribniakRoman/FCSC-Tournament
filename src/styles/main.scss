@@ -108,13 +108,11 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
+      text-align: center;
       & h1 {
         &::first-letter {
           text-transform: uppercase;
         }
-      }
-      &.right {
-        text-align: right;
       }
     }
   }
