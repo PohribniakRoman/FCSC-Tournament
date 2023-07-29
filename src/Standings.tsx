@@ -29,6 +29,13 @@ const ScheduleData = [
   },
   {
     date: 29.07,
+    time: "16:00",
+    participants: [StandingsData[0], StandingsData[3]],
+    completed: false,
+    score: [0, 0],
+  },
+  {
+    date: 29.07,
     time: "17:00",
     participants: [StandingsData[2], StandingsData[5]],
     completed: false,
