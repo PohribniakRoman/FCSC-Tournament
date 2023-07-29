@@ -50,14 +50,14 @@ const ScheduleData = [
   },
   {
     date: 29.07,
-    time: "19:10",
+    time: "20:10",
     participants: [StandingsData[6], StandingsData[2]],
     completed: false,
     score: [0, 0],
   },
   {
     date: 29.07,
-    time: "20:10",
+    time: "19:10",
     participants: [StandingsData[7], StandingsData[4]],
     completed: false,
     score: [0, 0],
