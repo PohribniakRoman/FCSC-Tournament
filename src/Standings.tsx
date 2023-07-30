@@ -3,45 +3,17 @@ import {BsFillGrid3X2GapFill} from "react-icons/bs";
 
 const StandingsData = [
   { name: "AVGAN", scroe: { wins: 0, loses: 2 } },
-  { name: "Пивний удар", scroe: { wins: 2, loses: 0 } },
-  { name: "Sniffers", scroe: { wins: 0, loses: 1 } },
-  { name: "Team Bobr", scroe: { wins: 2, loses: 1 } },
+  { name: "Пивний удар", scroe: { wins: 4, loses: 0 } },
+  { name: "Sniffers", scroe: { wins: 0, loses: 2 } },
+  { name: "Team Bobr", scroe: { wins: 3, loses: 1 } },
   { name: "НЕТРЕБА PLS", scroe: { wins: 1, loses: 1 } },
   { name: "DNRInside", scroe: { wins: 1, loses: 2 } },
-  { name: "322 BEZERKER TEAM", scroe: { wins: 0, loses: 1 } },
+  { name: "322 BEZERKER TEAM", scroe: { wins: 1, loses: 2 } },
   { name: "An4ous Kaban4ika", scroe: { wins: 2, loses: 0 } },
 ];
 
 const ScheduleData = [
-  {
-    date: 30.07,
-    time: "14:00",
-    participants: [StandingsData[6], StandingsData[2]],
-    completed: false,
-    score: [0, 0],
-  },
-  {
-    date: 30.07,
-    time: "15:00",
-    participants: [StandingsData[7], StandingsData[1]],
-    completed: false,
-    score: [0, 0],
-  },
-  {
-    date: 30.07,
-    time: "15:00",
-    participants: [StandingsData[4], "Match 1 winner"],
-    completed: false,
-    score: [0, 0],
-  },
-  {
-    date: 30.07,
-    time: "18:00",
-    participants: [StandingsData[3],"Match 3 winner"],
-    completed: false,
-    score: [0, 0],
-  },
-];
+] as any[];
 
 export const Standings: React.FC = () => {
   const [isVisible,setVisible] = useState(false);
