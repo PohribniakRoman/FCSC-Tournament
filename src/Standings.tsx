@@ -37,7 +37,7 @@ const ScheduleData = [
   {
     date: 30.07,
     time: "18:00",
-    participants: [StandingsData[3],"Match 2 winner"],
+    participants: [StandingsData[3],"Match 3 winner"],
     completed: false,
     score: [0, 0],
   },
