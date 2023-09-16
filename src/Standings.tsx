@@ -1,25 +1,18 @@
 import { useState } from "react";
 import {BsFillGrid3X2GapFill} from "react-icons/bs";
 
-const StandingsData = [
-  { name: "AVGAN", scroe: { wins: 0, loses: 2 } },
-  { name: "Пивний удар", scroe: { wins: 4, loses: 0 } },
-  { name: "Sniffers", scroe: { wins: 0, loses: 2 } },
-  { name: "Team Bobr", scroe: { wins: 3, loses: 1 } },
-  { name: "НЕТРЕБА PLS", scroe: { wins: 1, loses: 1 } },
-  { name: "DNRInside", scroe: { wins: 1, loses: 2 } },
-  { name: "322 BEZERKER TEAM", scroe: { wins: 1, loses: 2 } },
-  { name: "An4ous Kaban4ika", scroe: { wins: 2, loses: 0 } },
-];
+// const StandingsData = [
+// ];
 
 const ScheduleData = [
 ] as any[];
 
 export const Standings: React.FC = () => {
   const [isVisible,setVisible] = useState(false);
-  const currentStandingsData = StandingsData.sort(
-    (a, b) => b.scroe.wins - a.scroe.wins
-  );
+  const currentStandingsData = [] as any[]; 
+  // StandingsData.sort(
+  //   (a, b) => b.scroe.wins - a.scroe.wins
+  // );
 
   return (
     <>
