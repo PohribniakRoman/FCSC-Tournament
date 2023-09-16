@@ -19,7 +19,7 @@ export const Standings: React.FC = () => {
       <div className="standings--toggle">
       {/* onClick={()=>setVisible(!isVisible)} */}
         <div className="standings--toggle-btn" >
-          <a href="https://discord.gg/vAZ7MNRe5x"> FCSF + FRECS | Tournament | CS:GO</a>
+          <a target="_blank" href="https://discord.gg/vAZ7MNRe5x"> FCSF + FRECS | Tournament | CS:GO</a>
       </div>
     </div>
     <section className={`standings ${false?"active":""}`}>
