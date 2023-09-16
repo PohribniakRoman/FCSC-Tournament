@@ -17,8 +17,9 @@ export const Standings: React.FC = () => {
   return (
     <>
       <div className="standings--toggle">
-        <div className="standings--toggle-btn" onClick={()=>setVisible(!isVisible)}>
-          <BsFillGrid3X2GapFill/>
+      {/* onClick={()=>setVisible(!isVisible)} */}
+        <div className="standings--toggle-btn" >
+          <a href="https://discord.gg/vAZ7MNRe5x"> FCSF | Tournament | CS:GO</a>
       </div>
     </div>
     <section className={`standings ${isVisible?"active":""}`}>
