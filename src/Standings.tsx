@@ -8,7 +8,7 @@ const ScheduleData = [
 ] as any[];
 
 export const Standings: React.FC = () => {
-  const [isVisible,setVisible] = useState(false);
+  // const [isVisible,setVisible] = useState(false);
   const currentStandingsData = [] as any[]; 
   // StandingsData.sort(
   //   (a, b) => b.scroe.wins - a.scroe.wins
@@ -19,10 +19,10 @@ export const Standings: React.FC = () => {
       <div className="standings--toggle">
       {/* onClick={()=>setVisible(!isVisible)} */}
         <div className="standings--toggle-btn" >
-          <a href="https://discord.gg/vAZ7MNRe5x"> FCSF | Tournament | CS:GO</a>
+          <a href="https://discord.gg/vAZ7MNRe5x"> FCSF + FRECS | Tournament | CS:GO</a>
       </div>
     </div>
-    <section className={`standings ${isVisible?"active":""}`}>
+    <section className={`standings ${false?"active":""}`}>
       <div className="standings--score-container">
         <div className="standings--item">
           <h1>
